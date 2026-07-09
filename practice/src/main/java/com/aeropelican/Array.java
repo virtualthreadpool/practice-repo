@@ -1,0 +1,33 @@
+package com.aeropelican;
+
+public class Array {
+    public void largest(int[] a){
+            int max = a[0];
+
+            for (int i=1;i<a.length;i++){
+                if (a[i]>max)
+                    max=a[i];
+            }
+            System.out.println("Largest: "+max);
+        }
+
+        void smallest(int[] a){
+            int min=a[0];
+            for (int i=1;i<a.length;i++){
+                if (a[i]<min)
+                    min=a[i];
+            }
+
+            System.out.println("Smallest: "+min);
+        }
+
+        void sum(int [] a){
+            int s=0;
+
+            for (int i=0;i< a.length;i++)
+                s=s+a[i];
+
+            System.out.println("Sum : "+ s);
+        }
+    }
+
