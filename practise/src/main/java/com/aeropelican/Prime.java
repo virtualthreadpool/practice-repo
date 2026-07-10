@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Prime {
     public void checkPrime(){
 
-        Scanner Scanner =new Scanner(System.in);
+        Scanner scanner =new Scanner(System.in);
         System.out.print("Enter a Number: ");
-        int n = Scanner.nextInt();
+        int n = scanner.nextInt();
         boolean prime = true;
 
         if (n <= 1){

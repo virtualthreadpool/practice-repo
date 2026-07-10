@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class PrimeRange {
     public void printPrimes() {
-        Scanner Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a N: ");
-        int n = Scanner.nextInt();
+        int n = scanner.nextInt();
         System.out.println("Prime Number: ");
         for (int i = 2; i <= n; i++) {
             boolean prime = true;
