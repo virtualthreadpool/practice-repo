@@ -1,9 +1,6 @@
 package com.aeropelican.productservice.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Table(name = "products")
@@ -12,6 +9,7 @@ import lombok.Data;
 public class Product {
     @Id
     @Column(name = "product_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer productId;
     @Column(name = "product_name")
     private String productName;
